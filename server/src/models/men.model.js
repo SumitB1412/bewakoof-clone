@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 const reqString = { type: String, required: true };
 const reqArray = { type: Array, required: true };
 
-const allProductsSchema = new Schema({
+const menSchema = new Schema({
   title: reqString,
   description: reqString,
   category: reqString,
@@ -16,6 +16,6 @@ const allProductsSchema = new Schema({
   img: reqArray,
 });
 
-const AllProductsModel = model("allProduct", allProductsSchema);
+const MenModel = model("men", menSchema);
 
-module.exports = AllProductsModel;
+module.exports = MenModel;

@@ -3,19 +3,17 @@ const { Schema, model } = require("mongoose");
 const reqString = { type: String, required: true };
 const reqArray = { type: Array, required: true };
 
-const allProductsSchema = new Schema({
+const mobileSchema = new Schema({
   title: reqString,
   description: reqString,
-  category: reqString,
-  gender: reqString,
+  company: reqString,
+  model: reqString,
   originalPrice: reqString,
   discountPrice: reqString,
-  size: reqString,
-  rating: reqString,
   quantity: reqString,
   img: reqArray,
 });
 
-const AllProductsModel = model("allProduct", allProductsSchema);
+const MobileModel = model("mobile", mobileSchema);
 
-module.exports = AllProductsModel;
+module.exports = MobileModel;
