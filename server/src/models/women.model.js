@@ -10,7 +10,7 @@ const womenSchema = new Schema({
   gender: reqString,
   originalPrice: reqString,
   discountPrice: reqString,
-  size: reqString,
+  size: reqArray,
   rating: reqString,
   quantity: reqString,
   img: reqArray,
