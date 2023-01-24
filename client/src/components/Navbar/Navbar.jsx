@@ -1,20 +1,24 @@
 import React from "react";
 // import { Container } from "@chakra-ui/react";
-import styles from "../styles/navbar.module.css";
-import { Flex, Box,Spacer } from '@chakra-ui/react'
+import styles from "./navbar.module.css";
+import { Flex, Text,Spacer } from '@chakra-ui/react'
 
 export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.upperNav}>
         <Flex fontSize={11} bgColor={"red"} w={300}  letterSpacing={1}>
-          <Box>Offers</Box>
+          <Text>Offers</Text>
           <Spacer/>
-          <Box>Fanbook</Box>
+          <Text>Fanbook</Text>
           <Spacer/>
-          <Box>Download App</Box>
+          <Text>Download App</Text>
           <Spacer/>
-          <Box>TriBe Membership</Box>
+          <Text>TriBe Membership</Text>
+        </Flex>
+        <Flex  fontSize={11} bgColor={"red"} w={200}  letterSpacing={1}>
+          <Text>Contact Us</Text>
+          <Text>Track Order</Text>
         </Flex>
       </div>
     </nav>
