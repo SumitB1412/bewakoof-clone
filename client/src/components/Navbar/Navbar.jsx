@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.upperNav}>
-        <Flex fontSize={11} bgColor={"red"} w={300}  letterSpacing={1}>
+        <Flex fontSize={11} bgColor={"red"} w={320}  letterSpacing={1} ml={20}>
           <Text>Offers</Text>
           <Spacer/>
           <Text>Fanbook</Text>
