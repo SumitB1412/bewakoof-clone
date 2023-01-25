@@ -7,8 +7,33 @@
 /* upper nabar */
 
 .upperNav{
-  height: 25px;
+  height: 26px;
   background-color: rgb(238,238,238);
   display: flex;
   justify-content: space-between;
+  font-size: 10px;
+  font-weight: 500;
+}
+.upperNav>div:first-child{
+  width: 24%;
+  margin-left: 5%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upperNav>div:last-child{
+  width: 10%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+.upperNav p{
+  cursor: pointer;
+}
+.upperNav>div>div{
+  display: flex;
+  align-items: center;
 }

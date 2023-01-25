@@ -1,27 +1,25 @@
 import React from "react";
-// import { Container } from "@chakra-ui/react";
 import styles from "./navbar.module.css";
-import { Flex, Text,Spacer } from '@chakra-ui/react'
+import { CiMobile2 } from "react-icons/ci";
 
 export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.upperNav}>
-        <Flex fontSize={11} bgColor={"red"} w={320}  letterSpacing={1} ml={20}>
-          <Text>Offers</Text>
-          <Spacer/>
-          <Text>Fanbook</Text>
-          <Spacer/>
-          <Text>Download App</Text>
-          <Spacer/>
-          <Text>TriBe Membership</Text>
-        </Flex>
-        <Flex  fontSize={11} bgColor={"red"} w={200}  letterSpacing={1}>
-          <Text>Contact Us</Text>
-          <Text>Track Order</Text>
-        </Flex>
+        <div>
+          <p>Offers</p>
+          <p>Fanbook</p>
+          <div>
+            <CiMobile2 className={styles.icon} />
+            <p>Download App</p>
+          </div>
+          <p>TriBe Membership</p>
+        </div>
+        <div>
+          <p>Contact Us</p>
+          <p>Track Order</p>
+        </div>
       </div>
     </nav>
   );
-  //   <Container h={"50px"} maxW={"100%"} border={"1px solid"}></Container>
 };
